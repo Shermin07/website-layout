@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiger</title>
+    <style>
+        h1{
+            font-size: 10vw;
+        }
+        .tigress img{
+            width: 100%;
+
+        }
+        body{
+            max-width: 800px;
+            border: 2px solid red;
+            margin: 0 auto;
+        }
+        .container-two{
+            display: flex;
+        }
+.container-two.split{
+    width: 50%;
+}
+.split img{
+    width:100%;
+}
+@media screen and (max-width:576px) {
+    .container-two{
+        flex-direction: column;
+    }
+    .container-two.split{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Responsive website</h1>
+    </section>
+    <section class="tigress">
+        <h3>Tiger</h3>
+        <img src="images/tigress.jpeg">
+    </section>
+    <section >
+    
+        <h2>Two parts</h2>
+        <div class="container-two">
+            <div class="split">
+<img src="images/Heart healthy foods3.jpg">
+            </div>
+            <div class="split">
+<img src="images/tigress.jpeg">
+            </div>
+        </div>
+        
+        
+
+
+
+    </section>
+    
+</body>
+</html>

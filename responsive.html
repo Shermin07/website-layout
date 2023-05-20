@@ -14,6 +14,27 @@
         .container{
             display: grid;
             grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .food img{
+            width: 75%;
+        }
+        @media screen and (max-width:576px) {
+            .food{
+                background-color: orange;
+            }
+          .container{
+            grid-template-columns: repeat(3,1fr);
+          }  
+        }
+        @media screen and(min-width:577px) and(max-width:992px) {
+            .food{
+                background-color: blue;
+            }
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
         }
 
     </style>
